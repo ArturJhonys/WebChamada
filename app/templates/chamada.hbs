@@ -1,0 +1,25 @@
+<div class="jumbo">
+    <div class="right tomster"></div>
+    <h2>CHAMADA</h2>
+    <p>Realizar chamada dos alunos</p>
+    {{#link-to "cadastraAluno" class="button"}}
+        cadastraAluno
+    {{/link-to}}
+</div>
+
+{{#each this.model as |alunos|}}
+<article class="listing">
+    <div class="details">
+        <h3>{{alunos.nome}}</h3>
+        <div class="detail type">
+            <span>Faixa:</span> {{alunos.faixa}}
+        </div>
+        <div class="detail owner">
+            <span>Idade:</span> {{alunos.idade}}
+        </div>
+        <div class="detail location">
+            <span>Data Entrada:</span> {{alunos.dataEntrada}}
+        </div>
+    </div>
+</article>
+{{/each}}
