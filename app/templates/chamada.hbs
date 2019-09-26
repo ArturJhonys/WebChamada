@@ -3,23 +3,24 @@
     <h2>CHAMADA</h2>
     <p>Realizar chamada dos alunos</p>
     {{#link-to "cadastraAluno" class="button"}}
-        cadastraAluno
+    cadastraAluno
     {{/link-to}}
 </div>
 
-{{#each this.model as |alunos|}}
-<article class="listing">
-    <div class="details">
-        <h3>{{alunos.nome}}</h3>
-        <div class="detail type">
-            <span>Faixa:</span> {{alunos.faixa}}
-        </div>
-        <div class="detail owner">
-            <span>Idade:</span> {{alunos.idade}}
-        </div>
-        <div class="detail location">
-            <span>Data Entrada:</span> {{alunos.dataEntrada}}
-        </div>
+{{#each this.model as |chamadaUnit|}}
+  <ListandoChamada @chamada={{chamadaUnit}} />
+{{#each this.model as |chamada|}}
+  <article class="listing">
+    <h3>{{chamada.nome}}</h3>
+    <div class="detail owner">
+      <span>Código:</span> {{chamada.codigo}}
     </div>
-</article>
+    <div class="detail type">
+      <span>Faixa:</span> {{chamada.faixa}}
+    </div>
+    <div class="detail location">
+      <span>Data Entrada:</span> {{chamada.dataEntrada}}
+    </div>
+  </article>
+{{/each}}
 {{/each}}

@@ -1,0 +1,23 @@
+{{yield}}
+<article class="listing">
+    <a 
+        onclick={{action "toggleImageSize"}}
+        class="image {{if this.isWide "wide"}}"
+        role="button"
+    >
+        <img src="{{this.chamada.imagem}}" alt="">
+        <small>Ver Imagem</small>
+    </a>
+    <div class="detail">
+        <h3>{{this.chamada.nome}}</h3>
+        <div class="detail owner">
+            <span><b>Código:</b></span>{{this.chamada.id}}
+        </div>
+        <div class="detail owner">
+            <span><b>Faixa:</b></span>{{this.chamada.faixa}}
+        </div>
+        <div class="detail type">
+            <span><b>Data Entrada:</b></span>{{this.chamada.dataEntrada}}
+        </div>
+    </div>
+</article>
