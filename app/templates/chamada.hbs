@@ -8,18 +8,18 @@
 </div>
 
 {{#each this.model as |alunos|}}
-<article class="listing">
-    <div class="details">
-        <h3>{{alunos.nome}}</h3>
-        <div class="detail type">
-            <span>Faixa:</span> {{alunos.faixa}}
+    <article class="listing">
+        <div class="details">
+            <h3>{{alunos.nome}}</h3>
+            <div class="detail type">
+                <span>Faixa:</span> {{alunos.faixa}}
+            </div>
+            <div class="detail owner">
+                <span>Idade:</span> {{alunos.idade}}
+            </div>
+            <div class="detail location">
+                <span>Data Entrada:</span> {{alunos.dataEntrada}}
+            </div>
         </div>
-        <div class="detail owner">
-            <span>Idade:</span> {{alunos.idade}}
-        </div>
-        <div class="detail location">
-            <span>Data Entrada:</span> {{alunos.dataEntrada}}
-        </div>
-    </div>
-</article>
+    </article>
 {{/each}}
