@@ -6,11 +6,6 @@ const Router = EmberRouter.extend({
   rootURL: config.rootURL
 });
 
-Router.map(function () {
-  this.route('sobre');
-  this.route('contato');
-  this.route('chamada');
-  this.route('cadastra-aluno');
-});
+Router.map(function () {});
 
 export default Router;
