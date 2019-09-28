@@ -7,6 +7,13 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('modalidade');
+  this.route('escola');
+  this.route('plano');
+  this.route('usuario');
+  this.route('turma');
+  this.route('aula');
+  this.route('agenda');
 });
 
 export default Router;
