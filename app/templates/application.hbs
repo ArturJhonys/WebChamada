@@ -1,25 +1,5 @@
-<div class="container">
-    <div class="menu">
-        {{#link-to "index"}}
-            <h1>
-                <em>WEB CHAMADA</em>
-            </h1>
-        {{/link-to}}
+{{!-- The following component displays Ember's default welcome message. --}}
+<WelcomePage />
+{{!-- Feel free to remove this! --}}
 
-        <div class="links">
-            {{#link-to "cadastraAluno" class="menu-cadastraAluno"}}
-                cadastra Aluno
-            {{/link-to}}
-            {{#link-to "sobre" class="menu-sobre"}}
-                sobre
-            {{/link-to}}
-            {{#link-to "contato" class="menu-contato"}}
-                contato
-            {{/link-to}}
-        </div>
-    </div>
-
-    <div class="body">
-        {{outlet}}
-    </div>
-</div>
+{{outlet}}
