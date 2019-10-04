@@ -11,6 +11,7 @@ Router.map(function () {
   this.route('contato');
   this.route('chamada');
   this.route('cadastra-aluno');
+  this.route('navbar');
 });
 
 export default Router;

@@ -1,11 +1,11 @@
 import { module, test } from 'qunit';
 import { setupTest } from 'ember-qunit';
 
-module('Unit | Route | cadastra-aluno', function(hooks) {
+module('Unit | Route | navbar', function(hooks) {
   setupTest(hooks);
 
   test('it exists', function(assert) {
-    let route = this.owner.lookup('route:cadastra-aluno');
+    let route = this.owner.lookup('route:navbar');
     assert.ok(route);
   });
 });
